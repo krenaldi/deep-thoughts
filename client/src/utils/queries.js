@@ -64,10 +64,6 @@ export const QUERY_ME = gql`
             username
             email
             friendCount
-            friends {
-                _id
-                username
-            }
             thoughts {
                 _id
                 thoughtText
@@ -79,6 +75,10 @@ export const QUERY_ME = gql`
                     reactionBody
                     username
                 }
+            }
+            friends {
+                _id
+                username
             }
         }
     }
